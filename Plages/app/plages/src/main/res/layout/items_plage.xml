@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:scaleType="fitXY"
+
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:alpha="0.7"
+        app:cardBackgroundColor="#D5D4D4"
+        app:cardCornerRadius="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            >
+
+
+
+            <TextView
+                android:id="@+id/itemNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Plage des Saumonards"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/itemDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laverra risus vel nisi faucibus, eu faucibus quam auctor. Vestibulum nec risus sed lectus suscipit consequat. Suspendisse sollicitudin diam eget lacus ultricies, ut hendrerit urna sagittis. Donec id venenatis massa, vel tempor metus. Cras dictum elit nisi, at mattis metus pharetra ut. Nulla eu fermentum elit. Integer sagittis sollicitudin malesuada. Mauris libero."
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <CheckBox
+        android:id="@+id/itemFavori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:button="@drawable/favori_ou_non"
+        android:buttonTint="#FF0000" />
+</FrameLayout>

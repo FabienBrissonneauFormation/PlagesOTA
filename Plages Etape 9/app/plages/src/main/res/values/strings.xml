@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Plages</string>
+    <string name="plage_de_la_palmyre">Plage de la Palmyre</string>
+    <string name="plage_description">La plage de La Palmyre ou plage du Clapet, entièrement couverte de sable blond, est une des quatre plages de La Palmyre, station balnéaire de la commune des Mathes, dans le département de la Charente-Maritime et la région Nouvelle-Aquitaine.</string>
+    <string name="plus_d_information">Plus d\'information ...</string>
+    <string name="plages">Plages</string>
+    <string name="cartes">Cartes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

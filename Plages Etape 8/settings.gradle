@@ -1,0 +1,3 @@
+rootProject.name = "Plages"
+include ':app'
+include ':app:plages'

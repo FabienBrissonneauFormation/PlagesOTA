@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#D5D4D4"
+        android:alpha="0.5"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+    <TextView
+        android:id="@+id/itemNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="5dp"
+
+        android:text="Plage des Saumonards"/>
+
+        <TextView
+            android:id="@+id/itemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laverra risus vel nisi faucibus, eu faucibus quam auctor. Vestibulum nec risus sed lectus suscipit consequat. Suspendisse sollicitudin diam eget lacus ultricies, ut hendrerit urna sagittis. Donec id venenatis massa, vel tempor metus. Cras dictum elit nisi, at mattis metus pharetra ut. Nulla eu fermentum elit. Integer sagittis sollicitudin malesuada. Mauris libero."
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

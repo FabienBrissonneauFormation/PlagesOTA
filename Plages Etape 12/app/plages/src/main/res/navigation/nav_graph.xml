@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listePlagesFragment">
+
+    <fragment
+        android:id="@+id/listePlagesFragment"
+        android:name="biz.ei6.plages.ui.listeplages.ListePlagesFragment"
+        android:label="Liste des plages">
+        <action
+            android:id="@+id/action_listePlagesFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_listePlagesFragment_to_creationFragment"
+            app:destination="@id/creationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="biz.ei6.plages.ui.listeplages.DetailFragment"
+        android:label="Détail de la plage" >
+        <argument
+            android:name="plageId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/creationFragment"
+        android:name="biz.ei6.plages.ui.listeplages.CreationFragment"
+        android:label="Création de plage"
+        tools:layout="@layout/fragment_creation" />
+</navigation>

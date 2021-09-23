@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Beaches</string>
+    <string name="plage_de_la_palmyre">Beach of la Palmyre</string>
+    <string name="plage_description">The beach of La Palmyre or Clapet beach, entirely covered with white sand, is one of the four beaches of La Palmyre, a seaside resort in the commune of Les Mathes, in the department of Charente-Maritime and the Nouvelle-Aquitaine region.</string>
+    <string name="plus_d_information">More information ...</string>
+    <string name="plages">Beaches</string>
+    <string name="cartes">Maps</string>
+</resources>
